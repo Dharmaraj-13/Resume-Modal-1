@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --heading--:"Kanit", sans-serif;
+    --body--:"Nunito", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+ 
+}
+
+.a4-template {
+    width: 210mm; /* A4 width in pixels at 96 DPI */
+    height: 297mm; /* A4 height in pixels at 96 DPI */
+    margin: 20px auto; /* Center the template */
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  @media print {
+    .a4-template {
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+      box-shadow: none;
+      border: none;
+      page-break-after: always;
+    }
+  }
+  .left-side{
+    background-color: #1f2953;
+    max-height: 297mm;
+  }
+  .profile-image img{
+    min-width: 100px;
+    min-height: 100px;
+    margin-top: 30px;
+    border: 5px #ffff solid;   
+}
+
+
+
+.skills *{
+    color: #e8e3e3;   
+}
+
+.skills h5{
+    padding: 0 10px;
+    font-weight: 550;
+    font-family: var(--heading--);
+    text-transform: uppercase;
+    background: #ffff;
+    border: 2px 2px 2px 0px solid #ffff;
+    border-radius:0px 15px 15px 0px ;
+    color:#1f2953;
+    display: inline-block;
+}
+
+.skills ul{
+   
+    margin: 0 20px;
+    padding: 0 15px;
+    
+}
+.skills ul li{
+    color: #e8e3e3;
+    padding-bottom: 7px ;
+    padding-top: 0;
+    font-size: medium;
+
+}
+
+.education h5{
+    margin-top: 10px;
+    padding: 0 10px;
+    font-weight: 550;
+    font-family: var(--heading--);
+    text-transform: uppercase;
+    background: #ffff;
+    border: 2px 2px 2px 0px solid #ffff;
+    border-radius:0px 15px 15px 0px ;
+    color:#1f2953;
+    display: inline-block;
+}
+.education .bachelors{
+    padding: 0px 0px;
+    margin: 0;
+    
+}
+
+.education .masters{
+    padding: 0 0px;
+    margin: 0;
+}
+.education ul li{
+    color: #dad8d8;
+}
+.education h6{
+    color: #e8e3e3;
+    font-size: medium;
+    font-weight: 600; 
+      
+}
+.education p{
+    color: #dad8d8;
+    font-size: 15px;
+    padding-top: 0;
+    padding-left: 2px;
+    margin-top:0 ;
+}
+
+.language h5{
+    margin-top: 10px;
+    padding: 0 10px;
+    font-weight: 550;
+    font-family: var(--heading--);
+    text-transform: uppercase;
+    background: #ffff;
+    border: 2px 2px 2px 0px solid #ffff;
+    border-radius:0px 15px 15px 0px ;
+    color:#1f2953;
+    display: inline-block;
+}
+
+.language ul{
+    margin: 0 20px;
+    padding: 0 15px;
+}
+
+.language ul li{
+    color: #e8e3e3;
+    padding-bottom: 5px ;
+    padding-top: 0;
+    font-size: medium;
+}
+
+.contact h5{
+    margin-top: 10px;
+    padding: 0 10px;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: #e8e3e3;
+    background: #ffff;
+    border: 2px 2px 2px 0px solid #ffff;
+    color:#1f2953;
+    border-radius:0px 15px 15px 0px ;
+    display: inline-block;
+    font-family: var(--heading--);
+}
+
+.contact ul{
+    padding: 0 15px;
+    padding-top: 5px;
+    
+}
+.contact ul li {
+    list-style: none;
+    color: #e8eaed;
+    height: 35px;
+}
+
+.contact ul li span{
+    margin-right: 15px;
+}
+
+.contact ul li p{
+    margin-bottom: 0;
+}
+
+/*--------Right Side-------------*/
+.right-side{
+    margin: 20px;
+}
+.personal-details{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+.profile p{
+    text-align: justify;
+}
+
+.work-details ul{
+    border-left:2px solid #5b6168 ;
+}
+.work-details ul li{
+    font-size: small;
+    font-weight: 550;
+    
+}
+
+h4{
+    border-bottom:2px solid #414040;
+    font-family: var(--heading--);
+    color: #414040;
+    text-transform: uppercase;
+}
+
+
+.actual-reference{
+    font-size: small;
+    font-weight: 550;
+    color: #5b6168;
+}
